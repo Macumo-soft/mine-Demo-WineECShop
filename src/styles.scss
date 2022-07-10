@@ -1,39 +1,61 @@
 
-// Custom Theming for Angular Material
-// For more information: https://material.angular.io/guide/theming
-@use '@angular/material' as mat;
-// Plus imports for other components in your app.
+// // Custom Theming for Angular Material
+// // For more information: https://material.angular.io/guide/theming
+// @use '@angular/material' as mat;
+// // Plus imports for other components in your app.
 
-// Include the common styles for Angular Material. We include this here so that you only
-// have to load a single css file for Angular Material in your app.
-// Be sure that you only ever include this mixin once!
-@include mat.core();
+// // Include the common styles for Angular Material. We include this here so that you only
+// // have to load a single css file for Angular Material in your app.
+// // Be sure that you only ever include this mixin once!
+// @include mat.core();
 
-// Define the palettes for your theme using the Material Design palettes available in palette.scss
-// (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// hue. Available color palettes: https://material.io/design/color/
-$mine-Demo-WineECShop-primary: mat.define-palette(mat.$indigo-palette);
-$mine-Demo-WineECShop-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+// // Define the palettes for your theme using the Material Design palettes available in palette.scss
+// // (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// // hue. Available color palettes: https://material.io/design/color/
+// $mine-Demo-WineECShop-primary: mat.define-palette(mat.$indigo-palette);
+// $mine-Demo-WineECShop-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 
-// The warn palette is optional (defaults to red).
-$mine-Demo-WineECShop-warn: mat.define-palette(mat.$red-palette);
+// // The warn palette is optional (defaults to red).
+// $mine-Demo-WineECShop-warn: mat.define-palette(mat.$red-palette);
 
-// Create the theme object. A theme consists of configurations for individual
-// theming systems such as "color" or "typography".
-$mine-Demo-WineECShop-theme: mat.define-light-theme((
-  color: (
-    primary: $mine-Demo-WineECShop-primary,
-    accent: $mine-Demo-WineECShop-accent,
-    warn: $mine-Demo-WineECShop-warn,
-  )
-));
+// // Create the theme object. A theme consists of configurations for individual
+// // theming systems such as "color" or "typography".
+// $mine-Demo-WineECShop-theme: mat.define-light-theme((
+//   color: (
+//     primary: $mine-Demo-WineECShop-primary,
+//     accent: $mine-Demo-WineECShop-accent,
+//     warn: $mine-Demo-WineECShop-warn,
+//   )
+// ));
 
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
-@include mat.all-component-themes($mine-Demo-WineECShop-theme);
+// // Include theme styles for core and each component used in your app.
+// // Alternatively, you can import and @include the theme mixins for each component
+// // that you are using.
+// @include mat.all-component-themes($mine-Demo-WineECShop-theme);
 
-/* You can add global styles to this file, and also import other style files */
+// /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// BASE
+@import "./scss/base/base";
+@import "./scss/base/color";
+
+// LAYOUT
+@import "./scss/layout/header";
+@import "./scss/layout/wine-menu";
+@import "./scss/layout/footer";
+
+// COMPONENT
+@import "./scss/components/banner";
+@import "./scss/components/wine-list";
+@import "./scss/components/wine-card";
+@import "./scss/components/rating";
+@import "./scss/components/button";
+@import "./scss/components/sns-icons";
+@import "./scss/components/header-menu";
+
+// PAGES
+@import "./scss/pages/home";
+
