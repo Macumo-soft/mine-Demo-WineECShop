@@ -5,7 +5,7 @@ import { ImageConstants } from 'src/app/constants/image.constants';
 @Component({
   selector: 'header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  // styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
 

@@ -4,7 +4,7 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'c-rating',
   templateUrl: './rating.component.html',
-  styleUrls: ['./rating.component.scss']
+  // styleUrls: ['./rating.component.scss']
 })
 export class RatingComponent implements OnInit {
   @Input() rateScore: string = "";

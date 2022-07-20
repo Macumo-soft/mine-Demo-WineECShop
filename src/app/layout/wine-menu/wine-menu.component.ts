@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'wine-menu',
   templateUrl: './wine-menu.component.html',
-  styleUrls: ['./wine-menu.component.scss']
+  // styleUrls: ['./wine-menu.component.scss']
 })
 export class WineMenuComponent implements OnInit {
 

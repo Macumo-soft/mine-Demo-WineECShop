@@ -6,7 +6,7 @@ import { WineService } from 'src/app/service/wine-service';
 @Component({
   selector: 'c-wine-list',
   templateUrl: './wine-list.component.html',
-  styleUrls: ['./wine-list.component.scss']
+  // styleUrls: ['./wine-list.component.scss']
 })
 export class WineListComponent implements OnInit {
   selectList: ISelect[] = SelectConstants.getSelectList();

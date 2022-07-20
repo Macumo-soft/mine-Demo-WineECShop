@@ -4,7 +4,7 @@ import { ImageConstants } from '../../constants/image.constants';
 @Component({
   selector: 'home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  // styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
   topBannerImage: string = ImageConstants.topBanner.imageUrl;
