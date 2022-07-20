@@ -1,0 +1,11 @@
+<div class="sns-icons">
+    <div class="sns-icons-title">
+        {{titleLabel}}
+    </div>
+    
+    <span class="sns-icons-list">
+        <a href={{icon.url}} *ngFor="let icon of iconList">
+            <mat-icon svgIcon={{icon.name}}></mat-icon>
+        </a>
+    </span>
+</div>

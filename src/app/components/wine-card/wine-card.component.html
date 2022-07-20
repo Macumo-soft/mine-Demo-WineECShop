@@ -1,0 +1,11 @@
+<div class="wine-card">
+    <label for="" class="wine-card-title">{{wineTitle}}</label>
+
+    <img src={{wineImg}} alt="" class="wine-card-img">
+    
+    <c-rating rateScore={{wineStar}}></c-rating>
+
+    <div class="wine-card-price">{{winePrice | currency }}</div>
+    
+    <c-button buttonLabel="Add to Cart"></c-button>
+</div>

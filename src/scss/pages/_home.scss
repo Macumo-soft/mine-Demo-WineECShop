@@ -1,0 +1,38 @@
+.home {
+    &-top-image {
+        background-color: $color-primary-red-1;
+
+        img {
+            opacity: 50%;
+            // filter: brightness(100%) contrast(-90%) saturate(-50%);
+            width: 100%;
+            height: 30rem;
+            object-fit: cover;
+        }
+    }
+
+    &-banner {
+        background-color: $color-grey-1;
+        position: relative;
+        // margin-top: 5rem;
+        margin-bottom: 30rem;
+
+
+        img {
+            opacity: 30%;
+            filter: grayscale(1);
+            width: 100%;
+            height: 30rem;
+            object-fit: cover;
+        }
+
+        &-quote {
+            position: absolute;
+            z-index: 10;
+            bottom: 5%;
+            right: 5%;
+            font-size: 5rem;
+            color: white;
+        }
+    }
+}

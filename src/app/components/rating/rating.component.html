@@ -1,0 +1,11 @@
+<div class="rating-star">
+    <ng-container *ngFor="let n of getScore().array;">
+        <mat-icon *ngIf="n >= 1" svgIcon={{starIcon}} style="color: #EBC351"></mat-icon>
+        <mat-icon *ngIf="n < 1" svgIcon={{starHalfIcon}} style="color: #EBC351"></mat-icon>
+    </ng-container>
+    <ng-container *ngFor="let n of (5 - getScore().score) | range;">
+        <mat-icon svgIcon={{starIcon}} style="color: gray"></mat-icon>
+    </ng-container>
+</div>
+
+

@@ -1,0 +1,15 @@
+<div class="wine-list">
+  <div class="wine-list-select">
+    <ng-container *ngFor="let select of selectList; let i = index">
+      <input type="radio" name="wine-list" id={{select.title}} value={{select.value}}
+        [checked]=" i == 0 ? true : false">
+      <label for={{select.title}}>{{select.title}}</label>
+    </ng-container>
+  </div>
+
+  <div class="wine-list-card">
+    <c-wine-card class="wine-list-card-item" *ngFor="let wineItem of wineItemList" wineTitle={{wineItem.title}}
+      wineImg={{wineItem.img}} wineStar={{wineItem.star}} winePrice={{wineItem.price}}>
+    </c-wine-card>
+  </div>
+</div>
